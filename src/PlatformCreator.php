@@ -63,7 +63,7 @@ class PlatformCreator
         $client_id
     )
     {
-        foreach (['.instructure.com','.beta.instructure.com','.test.instructure.com'] as $base_url) {
+        foreach (['.canvaslms.com','.beta.canvaslms.com','.test.canvaslms.com'] as $base_url) {
             $platform_id = 'https://canvas' . $base_url;
             $rsa_key = null;  // a public key is not required if a JKU is available
             $signature_method = 'RS256';
